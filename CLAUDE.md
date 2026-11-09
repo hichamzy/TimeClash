@@ -72,9 +72,15 @@ git ls-files | grep -i -E "\.env$|secret"   # vérif secrets avant push
 ## Outils connectés
 | Outil | État |
 |---|---|
+| .NET SDK 10.0.301 (+ 9.0.312, 9.0.320) | ✅ installé |
 | git 2.47.1 | ✅ installé |
 | Git LFS 3.6.1 | ✅ installé et configuré |
+| Python 3.14.3 | ✅ installé |
+| winget 1.29 | ✅ disponible (pour les installations) |
 | gh (GitHub CLI) | ❌ non installé (optionnel ; accès vérifié via `git ls-remote`) |
+| uv / uvx | ❌ non installé (requis pour Blender MCP, étape 3) |
+| Blender | ❌ non installé (requis étape 3) |
+| Unity Hub + Editor LTS | ❌ non installé (requis étape 4) |
 | Blender MCP | ⏳ étape 3 |
 | Unity MCP | ⏳ étape 4 |
 | Meshy API | ⏳ étape 5 |
@@ -86,4 +92,6 @@ git ls-files | grep -i -E "\.env$|secret"   # vérif secrets avant push
 - 2026-11-09 : GDD fourni déjà en V2 (arène §2 et DA §8 conformes) → copié tel quel dans `docs/GDD.md`, avec une note de priorité vers CLAUDE.md.
 
 ## État actuel
-- Étape 0 terminée (commit initial poussé). Prochaine : **étape 1 — vérification de l'environnement**.
+- Étape 0 terminée (commit initial poussé).
+- Étape 1 faite : .NET/git/LFS/Python OK ; manquent uv, Blender, Unity Hub/Editor (gh optionnel). En attente de l'installation par l'utilisateur.
+- Prochaine : **étape 2 — solution .NET et simulation de l'Arène Horloge**.
